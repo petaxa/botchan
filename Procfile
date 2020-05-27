@@ -1,1 +1,1 @@
-botchan:python botchan.py
+botchan: python botchan.py
