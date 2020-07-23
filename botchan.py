@@ -4,7 +4,7 @@ import asyncio
 from datetime import datetime, timedelta
 import os
 
-# token = os.environ['DISCORD_BOT_TOKEN']
+token = os.environ['DISCORD_BOT_TOKEN']
 
 client = commands.Bot(command_prefix='.')
 # client = discord.Client()
@@ -202,4 +202,4 @@ async def biginning(bigin):
     await bigin.channel.send(embed=bigining)
 
 
-client.run(DISCORD_BOT_TOKEN)
+client.run(token)
