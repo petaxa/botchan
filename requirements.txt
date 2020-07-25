@@ -1,1 +1,1 @@
-discord.py1.4.0a
+discord.py -v 1.4.0a
