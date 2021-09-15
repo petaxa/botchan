@@ -58,7 +58,7 @@ async def on_voice_state_update(member, before, after):
                 msg = f'{now:%m/%d-%H:%M} に {member.name} が {before.channel.name} から退出しました。'
                 await alert_channel.send(msg)
                 
-      if member.guild.id == 884594072130560120 and (before.channel != after.channel):
+      elif member.guild.id == 884594072130560120 and (before.channel != after.channel):
         now = datetime.utcnow() + timedelta(hours=9)
         alert_channel_M = client.get_channel(887357758523985920)
         if after.channel == before.channel is None:
